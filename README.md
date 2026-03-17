@@ -35,11 +35,21 @@ npm start
 npm run build:prod
 ```
 
-## Deploy en GitHub Pages
-1. Ajusta `baseHref` en `angular.json` para que coincida con tu repo (`/NOMBRE-REPO/`).
-2. Haz push a `main`.
-3. Activa **GitHub Pages** usando **GitHub Actions** como source.
-4. El workflow `.github/workflows/deploy-pages.yml` construye y publica `dist/.../browser`.
+## Deploy en GitHub Pages (repo actual)
+Este proyecto está configurado para el repo:
+
+- `https://github.com/OscarKovaky/bri-barberia`
+- URL esperada en Pages: `https://oscarkovaky.github.io/bri-barberia/`
+
+Configuración ya aplicada:
+- `baseHref: /bri-barberia/` en `angular.json`.
+- Workflow de Pages en `.github/workflows/deploy-pages.yml`.
+
+Pasos:
+1. Haz push a la rama principal (`main` o `master`).
+2. En GitHub, ve a **Settings → Pages**.
+3. En **Build and deployment**, selecciona **Source: GitHub Actions**.
+4. Espera a que termine el workflow **Deploy Angular to GitHub Pages**.
 
 ## SPA routing en hosting estático
 - Se incluye `src/404.html` para redireccionar rutas profundas a la raíz de la app en Pages.
