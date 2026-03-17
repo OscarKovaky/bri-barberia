@@ -1,0 +1,6 @@
+.services-page { padding: 0.75rem 0 0.2rem; }
+.controls { margin-bottom: 1rem; }
+.services-grid { gap: 1.15rem; }
+@media (min-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

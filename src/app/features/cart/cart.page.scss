@@ -1,0 +1,22 @@
+.cart-page { padding-top: 0.75rem; }
+.cart-layout { display: grid; gap: 1rem; }
+.items-list { display: grid; gap: 0.8rem; }
+.cart-item { animation: rise .28s ease; }
+.row-top, .row-bottom { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
+.row-top h3 { font-size: 1.35rem; margin-bottom: 0.35rem; }
+.meta { color: var(--muted); }
+.qty-control { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.qty-control button { width: 34px; border: none; background: #202225; color: var(--text); cursor: pointer; font-size: 1rem; }
+.qty-control button:hover { background: #292b2f; }
+.qty-control span { min-width: 38px; display: grid; place-items: center; background: #17181b; }
+.line-subtotal { font-size: 1.06rem; }
+.summary-panel { display: grid; gap: 0.75rem; align-content: start; }
+.checkout-btn { width: 100%; }
+@media (min-width: 1024px) {
+  .cart-layout { grid-template-columns: minmax(0, 1.8fr) minmax(280px, 1fr); align-items: start; }
+  .summary-panel { position: sticky; top: 84px; }
+}
+@keyframes rise {
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
