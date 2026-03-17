@@ -6,11 +6,11 @@ import { ServiceItem } from '../models/service-item.model';
 export const BRAND = {
   name: 'Black Steel Barber Studio',
   slogan: 'Tu estilo, bien definido',
-  location: 'Cuernavaca, Morelos',
-  whatsapp: '+52 777 123 4567',
-  instagram: '@blacksteelbarber',
-  phone: '+52 777 987 6543',
-  email: 'hola@blacksteelbarber.com'
+  location: 'Chilpancingo de los Bravo',
+  whatsapp: '',
+  instagram: '@bricipres',
+  phone: '',
+  email: 'cipres@blacksteelbarber.com'
 };
 
 export const WEEK_SCHEDULE = [
@@ -48,7 +48,7 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 export const BARBERS: Barber[] = [
-  { id: 'brb-1', name: 'Marco Rojas', specialty: 'Skin Fade y Contornos', experienceYears: 9, rating: 4.9, bio: 'Especialista en estilos urbanos con precisión milimétrica.', image: 'assets/images/barber-1.jpg', available: true },
+  { id: 'brb-1', name: 'Azucena Castro', specialty: 'Skin Fade y Contornos', experienceYears: 9, rating: 4.9, bio: 'Especialista en estilos urbanos con precisión milimétrica.', image: 'assets/images/barber-1.jpg', available: true },
   { id: 'brb-2', name: 'Héctor León', specialty: 'Barba y Afeitado Clásico', experienceYears: 11, rating: 4.8, bio: 'Dominio total de navaja y rituales premium de barba.', image: 'assets/images/barber-2.jpg', available: true },
   { id: 'brb-3', name: 'Alan Cruz', specialty: 'Corte Ejecutivo', experienceYears: 7, rating: 4.7, bio: 'Look profesional y elegante para oficina o eventos.', image: 'assets/images/barber-3.jpg', available: true },
   { id: 'brb-4', name: 'Iván Salgado', specialty: 'Diseño y Estilo Creativo', experienceYears: 6, rating: 4.8, bio: 'Diseños personalizados para destacar tu identidad.', image: 'assets/images/barber-4.jpg', available: false }

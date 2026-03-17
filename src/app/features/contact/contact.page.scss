@@ -1,0 +1,16 @@
+.contact-page { padding-top: 0.75rem; }
+.contact-grid { display: grid; gap: 1rem; margin-top: 0.9rem; }
+.ui-card h3 { margin-bottom: 0.85rem; font-size: 1.35rem; }
+ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+li { display: flex; align-items: center; gap: 0.55rem; color: #d7d2ca; }
+.schedule { display: grid; gap: 0.55rem; color: #dfdbd2; }
+.map-placeholder {
+  margin-top: 1rem;
+  min-height: 220px;
+  border-radius: 12px;
+  border: 1px dashed #454950;
+  background: linear-gradient(145deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+}
+@media (min-width: 900px) {
+  .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
