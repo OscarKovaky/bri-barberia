@@ -4,7 +4,7 @@ import { Review } from '../models/review.model';
 import { ServiceItem } from '../models/service-item.model';
 
 export const BRAND = {
-  name: 'Black Steel Barber Studio',
+  name: 'AZTRO BARBER ESTUDIO',
   slogan: 'Tu estilo, bien definido',
   location: 'Chilpancingo de los Bravo',
   whatsapp: '',
